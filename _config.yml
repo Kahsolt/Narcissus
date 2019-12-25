@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 空想美術館
+title: 虚仮威し全てを。
 subtitle: ——若し雨が降ったら
-description: 我们都忘了真理的名字……
-keywords: blog,ACG,技术博客,二次元
+description: 我々は皆真理の名前を忘れだから……
+keywords: blog,ACG,技术博客,计算机,二次元
 author: アルミット
 language: zh-CN
 timezone: 
@@ -26,7 +26,7 @@ public_dir: public
 archive_dir: archives
 category_dir: categories
 tag_dir: tags
-code_dir: code
+code_dir: downloads/src
 i18n_dir: :lang
 skip_render:
   - 'assets/**'
@@ -143,9 +143,9 @@ githubEmojis:
 excerpt_length: 350
 
 # https://github.com/AngusFu/hexo-renderer-marked-lazy
-marked:
-  lazyAttr: data-src
-  blankSrc: /source/assets/img/QQ图片20190908091726.jpg
+#marked:
+#  lazyAttr: data-src
+#  blankSrc: /source/assets/img/QQ图片20190908091726.jpg
 
 ## reader
 # https://github.com/superalsrk/hexo-pdf

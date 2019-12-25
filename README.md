@@ -19,7 +19,6 @@ See Here: [https://kahsolt.github.io](https://kahsolt.github.io)
     + [live2d hexo-helper](https://github.com/EYHN/hexo-helper-live2d)
   - plugins(FAILED):
     - [hexo-ruby-character](https://github.com/JamesPan/hexo-ruby-character)
-  - and more..
 
 ----
 
