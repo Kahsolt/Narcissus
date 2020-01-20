@@ -749,7 +749,7 @@ if [[e1]](intexpr)s = n1 and [[e2]](intexpr)s = n2 and {l,l+1} ∩ dom(h) = Ø
 emp         ; empty heap
 e |-> e'    ; singleton heap containing one cell at address e with content e'
 p1 * p2     ; separation conjuction, the heap can be split into two disjoint heap p1 and p2
-p1 -* p2    ; separation implication, p1 is a subset of p2
+p1 -* p2    ; separation implication, if we merge a disjoint heap that holds p1, then p2 will hold (p1 is a superset of p2)
 e |-> -     ; ∃x. e |-> x, means that heap has exactly one element but we ignore its value
 e \-> e'    ; e |-> e' * true, means that heap at least has one element e'
 e |-> e1, e2, ..., en  ; means heap continously stores values (e1, e2, ..., en), head address is e

@@ -257,7 +257,7 @@ Class Σp[k]: a language L is in Σp[k] iff there exists a polynomial p and a po
 Class Πp[k]: `Πp[k] = coΣp[k]`  
 
 Class PH: `PH = ∪[i>=1]Σp[k]`  
-*NP = Σp[1], coNP ∈ Πp[1], PH ⊆ PSPACE  
+*NP = Σp[1], coNP = Πp[1], PH ⊆ PSPACE  
 
 Problems in `Σp[k]-complete`: ΣkSAT = {φ | ∃u1∀u2∃u3..Quk φ(u1, u2, ..., uk) = 1}  
 Class Σp[k] (alter-def): `Σp[k] = NP^Σ(k-1)SAT`, eg. `Σp[2] = NP^SAT = NP^NP`
@@ -409,18 +409,20 @@ See here, the universe of [Complexity Zoo](https://complexityzoo.uwaterloo.ca/).
 Summary for those classes that we've covered:
 
 ```
-                                                       PCP(logn,1)                                                       PCP(polyn,1)
-                                                           ||                                                                ||
-NC^1 ⊆ L ⊆ NL ⊆ P ⊆                                  ⊆ NP = dIP  ⊆ PH ⊆ PSPACE = NPSPACE = AP = IP ⊆ EXP = APSPACE ⊆ NEXP = MIP
-           |coNL|                                         coNP                       |coNPSPACE|
-                        (NC) ZPP ⊆ RP ⊆ BPP = coBPP ⊆ P/poly
-                                   coRP |BP·P|
-                                                IP[O(1)] ⊆ AM = BP·NP
+                                                     PCP(logn,1)                            PCP(polyn,1)
+               NC^2                                     ||                                     ||
+NC^1 ⊆ L ⊆ NL ⊆ NC ⊆ P ⊆                         ⊆ NP ⊆ PH ⊆ PSPACE = AP = IP ⊆ EXP ⊆ NEXP = MIP
+          |coNL|       |AL|          |BP·P/coBPP|     |dIP|   |coNPSPACE/NPSPACE|    |APSPACE|
+                            ZPP ⊆ RP ⊆ BPP ⊆ P/poly
+                                      IP[O(1)] ⊆ AM = BP·NP
 
 [the proved]
 NL = coNL, NPSPACE = coNPSPACE
 P ⊆ NP ∩ coNP, P ⊆ P/poly
 L ⊊ PSPACE, P ⊊ EXP, NP ⊊ NEXP     ; hierarchy theorem
+
+NC^1 ⊆ L ⊆ NL ⊆ NC^2
+NC ⊆ P
 
 BPP ⊆ EXP, BPP ⊆ P/poly, BPP ⊆ Σp[2] ∩ Πp[2]
 RP ⊆ BPP, coRP ⊆ BPP
